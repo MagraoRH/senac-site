@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+* {
+    margin: 0%;
+    margin-top: 0%;
+}
+
+#login a {
+    text-decoration: none;
+}
+
+#login a:visited {
+    color: rgb(0, 0, 0);
+}
+
+#login a:link {
+    color: rgb(0, 0, 0);
+}
+
+#login a:hover {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+.redesSociais {
+    display: flex;
+    justify-content: right;
+    margin: 1%;
+}
+
+.redesSociaisImg {
+    margin-right: 2px;
+}
+
+.senacLogo {
+    width: 15%;
+    height: 8%;
+    padding: 0.5%;
+}
+
+.rodape {
+    background-image: linear-gradient(white, blue);
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.empresa {
+    margin-right: 2%;
+}
+
+.p {
+    margin-right: 1%;
+}
+
+.verde {
+    color: green;
+}
+
+.centralizando_textos_RSTI {
+    text-align: center;
+}
+
+/*Aqui para baixo e o menu*/
+#menu {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    font-family: Arial;
+    padding-top: 0.5%;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#menu ul li {
+    width: 150px;
+    float: left;
+}
+
+#menu a {
+    padding: 11px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+#menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+}
+
+#menu a:hover {
+    background-color: blue;
+    color: orange;
+}
+
+#menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+/* ---Formatando o caracter utilizado para fazer o botão do menu--- */
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: blue;
+    color: #fff;
+    text-align: left;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+/* ---Tirar o troço do lado do botão do caracter--- */
+#bt_menu {
+    display: none;
+}
+
+/* ---Utilizar ele apenas em tamanhos pré determinados--- */
+label[for="bt_menu"] {
+    display: none;
+}
+
+/* ---Determinando em qual scala o botão vai aparecer--- */
+@media(max-width: 800px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+}
+
+/* ---Aplicando em todos elementos do menu as configurações deste elemento--- */
+#bt_menu:checked~#menu {
+    margin-left: 0;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    #menu {
+        margin-left: -100%;
+        /* ---Utilizar o caracter - pode diminuir o tamanho de algooooo !!!!!!!!!!!--- */
+        transition: all 1s;
+        height: auto;
+    }
+
+    #menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    #menu ul ul {
+        position: static;
+        overflow: hidden;
+        /* ---Menu não aparece--- */
+        max-height: 0;
+        transition: all 4s;
+    }
+
+    #menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+
+    /*Redimensionando o logo do senac*/
+    .senacLogo {
+        width: 40%;
+        padding: 1%;
+    }
+
+    /*Redimensionando os icones das redes sociais*/
+    .redesSociaisImg {
+        margin-right: 0%;
+        width: 88%;
+        margin-top: 88%;
+    }
+
+    .propagando_senac_2 {
+        display: none;
+    }
+
+    .alinhamento_da_media {
+        width: 100%;
+        margin-bottom: 22%;
+        margin-top: -11%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .cronogramaConteudo {
+        background-color: wheat;
+        color: black;
+        border-radius: 2%;
+        padding: 1%;
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    /*Arrumando o footer da pagina*/
+    .rodape {
+        background-image: linear-gradient(white, blue);
+        padding: 5%;
+        text-align: center;
+        color: white;
+        font-size: large;
+    }
+
+    .removendo_da_media {
+        display: none;
+    }
+
+    .redesSociais {
+        display: flex;
+        justify-content: right;
+        margin: 1%;
+        margin-top: -40%;
+    }
+
+    .ajustando_imagem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .empresa {
+        margin-top: 9%;
+    }
+
+    .tirando_o_espaco_de_cima {
+        margin-top: -85%;
+    }
+
+    .imagem_media {
+        width: 100%;
+        height: auto;
+        margin-bottom: -33%;
+        
+    }
+
+
+    .remover_media {
+        display: none;
+    }
+}
